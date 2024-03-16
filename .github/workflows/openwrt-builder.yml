@@ -74,9 +74,6 @@ jobs:
       
     - name: update luci-theme-argon
       run: cd openwrt/feeds/luci/themes && rm -rf luci-theme-argon && git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon
-
-    - name: add go
-      run: curl -O https://golang.org/dl/go1.22.1.linux-amd64.tar.gz && sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.22.1.linux-amd64.tar.gz && export PATH=$PATH:/usr/local/go/bin
       
     - name: Load custom configuration
       run: |
