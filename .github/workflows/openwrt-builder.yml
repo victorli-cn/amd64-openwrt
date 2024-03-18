@@ -68,7 +68,7 @@ jobs:
       run: cd openwrt && ./scripts/feeds update -a
       
     - name: rm xray-core
-      run: cd openwrt/feeds/small && rm -rf xray-core xray-plugin
+      run: cd openwrt/feeds/small && rm -rf xray-core xray-plugin v2ray-plugin
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
