@@ -147,7 +147,7 @@ jobs:
         removeArtifacts: true
         tag: ${{ env.FILE_NAME }}
         commit: main
-        token: ${{ secrets.RELEASES_TOKEN }}
+        token: ${{ secrets.RELEASE_TOKEN }}
         body: |
           - X86_64 平台自动更新发布固件
           - 默认IP：192.168.100.241 默认密码：password
